@@ -64,6 +64,22 @@ int main(void)
     pi08_preset_pin_clear();
 
     pi21_gpio_init();
+//    pi21_gpio_set(GPIO_Pin_0, 1);
+//    pi21_gpio_set(GPIO_Pin_1, 1);
+//    pi21_gpio_set(GPIO_Pin_2, 1);
+//    pi21_gpio_set(GPIO_Pin_3, 1);
+//    pi21_gpio_set(GPIO_Pin_4, 1);
+//    pi21_gpio_set(GPIO_Pin_5, 1);
+//    pi21_gpio_set(GPIO_Pin_6, 1);
+//    pi21_gpio_set(GPIO_Pin_7, 1);
+//    pi21_gpio_set(GPIO_Pin_8, 1);
+//    pi21_gpio_set(GPIO_Pin_9, 1);
+//    pi21_gpio_set(GPIO_Pin_10, 1);
+//    pi21_gpio_set(GPIO_Pin_11, 1);
+//    pi21_gpio_set(GPIO_Pin_12, 1);
+//    pi21_gpio_set(GPIO_Pin_13, 1);
+//    pi21_gpio_set(GPIO_Pin_14, 1);
+//    pi21_gpio_set(GPIO_Pin_15, 1);
 
     /* initial spi1 */
     spi1_full_duplex_init();
@@ -125,36 +141,54 @@ int main(void)
                             {
                                 case 0:
                                     pi21_gpio_set(GPIO_Pin_0, hid_rx_buf[5]);
+                                    break;
                                 case 1:
                                     pi21_gpio_set(GPIO_Pin_1, hid_rx_buf[5]);
+                                    break;
                                 case 2:
                                     pi21_gpio_set(GPIO_Pin_2, hid_rx_buf[5]);
+                                    break;
                                 case 3:
                                     pi21_gpio_set(GPIO_Pin_3, hid_rx_buf[5]);
+                                    break;
                                 case 4:
                                     pi21_gpio_set(GPIO_Pin_4, hid_rx_buf[5]);
+                                    break;
                                 case 5:
                                     pi21_gpio_set(GPIO_Pin_5, hid_rx_buf[5]);
+                                    break;
                                 case 6:
                                     pi21_gpio_set(GPIO_Pin_6, hid_rx_buf[5]);
+                                    break;
                                 case 7:
                                     pi21_gpio_set(GPIO_Pin_7, hid_rx_buf[5]);
+                                    break;
                                 case 8:
                                     pi21_gpio_set(GPIO_Pin_8, hid_rx_buf[5]);
+                                    break;
                                 case 9:
                                     pi21_gpio_set(GPIO_Pin_9, hid_rx_buf[5]);
+                                    break;
                                 case 10:
                                     pi21_gpio_set(GPIO_Pin_10, hid_rx_buf[5]);
+                                    break;
                                 case 11:
                                     pi21_gpio_set(GPIO_Pin_11, hid_rx_buf[5]);
+                                    break;
                                 case 12:
                                     pi21_gpio_set(GPIO_Pin_12, hid_rx_buf[5]);
+                                    break;
                                 case 13:
                                     pi21_gpio_set(GPIO_Pin_13, hid_rx_buf[5]);
+                                    break;
                                 case 14:
                                     pi21_gpio_set(GPIO_Pin_14, hid_rx_buf[5]);
+                                    break;
                                 case 15:
                                     pi21_gpio_set(GPIO_Pin_15, hid_rx_buf[5]);
+                                    break;
+                                default:
+                                    break;
                             }
 
 
